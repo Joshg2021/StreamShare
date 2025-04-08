@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamShare - Share Streaming Subscriptions</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Stream<span>Share</span></div>
+                <div class="mobile-menu-btn">☰</div>
+                <ul class="nav-links">
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#comparison">Compare</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#signup" class="cta-button">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="signup">
+        <div class="container">
+            <h1>Share Streaming Services, Save Money</h1>
+            <p>Connect with others to split the cost of your favorite streaming platforms. Watch more, pay less.</p>
+            <form id="hero-form" class="email-form">
+                <input type="email" class="email-input" placeholder="Enter your email" required>
+                <button type="submit" class="submit-button">Get Started</button>
+            </form>
+            
+            <!-- Admin Panel (hidden by default) -->
+            <div id="admin-panel" class="admin-panel">
+                <h3>Collected Emails</h3>
+                <div id="email-list" class="email-list">
+                    <!-- Email items will be added here dynamically -->
+                </div>
+                <div class="admin-controls">
+                    <button id="export-emails" class="cta-button">Export Emails</button>
+                    <button id="clear-emails" class="cta-button" style="background-color: #e84393;">Clear All Emails</button>
+                    <button id="close-admin" class="cta-button" style="background-color: #555;">Close Admin Panel</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Showcase Section -->
+    <section class="showcase">
+        <div class="container">
+            <div class="mockup-container">
+                <div class="mockup-text">
+                    <h2>Find the Perfect Subscription Match</h2>
+                    <p>Our intuitive platform makes it easy to find subscription partners who are looking for the same services as you. Browse available subscriptions, connect with potential partners, and start saving immediately.</p>
+                    <p>With StreamShare's secure payment system and profile verification, you can feel confident sharing with others.</p>
+                    <a href="#signup" class="cta-button">Try It Now</a>
+                </div>
+                <div class="mockup-image">
+                    <img src="img/mockup.png" alt="StreamShare Platform Interface">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up and let us know which streaming services you have or want to share.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Connect with Others</h3>
+                    <p>Browse available subscriptions or find people looking to join yours.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Share & Save</h3>
+                    <p>Split the cost securely through our platform and enjoy more content for less.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="pricing-header">
+                <h2 class="section-title">Save Up To 75% On Your Subscriptions</h2>
+                <p>See how much you could save by sharing subscription costs with others.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Netflix Premium</h3>
+                    <p>4K Ultra HD + 4 Screens</p>
+                    <div class="price">$19.99 <small>/month alone</small></div>
+                    <div class="save-badge">Save 75%</div>
+                    <div class="price">$4.99 <small>/month with StreamShare</small></div>
+                    <ul>
+                        <li>Same premium features</li>
+                        <li>Dedicated profile</li>
+                        <li>No interruptions</li>
+                        <li>Secure payment handling</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Start Sharing</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Disney+ Bundle</h3>
+                    <p>Disney+, Hulu, ESPN+</p>
+                    <div class="price">$19.99 <small>/month alone</small></div>
+                    <div class="save-badge">Save 66%</div>
+                    <div class="price">$6.66 <small>/month with StreamShare</small></div>
+                    <ul>
+                        <li>All included services</li>
+                        <li>Your own profiles</li>
+                        <li>HD streaming</li>
+                        <li>Secure payment handling</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Start Sharing</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Spotify Family</h3>
+                    <p>Premium for up to 6 accounts</p>
+                    <div class="price">$16.99 <small>/month alone</small></div>
+                    <div class="save-badge">Save 70%</div>
+                    <div class="price">$4.99 <small>/month with StreamShare</small></div>
+                    <ul>
+                        <li>Ad-free music</li>
+                        <li>Offline listening</li>
+                        <li>Your own recommendations</li>
+                        <li>Secure payment handling</li>
+                    </ul>
+                    <a href="#signup" class="cta-button">Start Sharing</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Comparison Table -->
+    <section class="comparison" id="comparison">
+        <div class="container">
+            <h2 class="section-title">Why Choose StreamShare?</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Features</th>
+                        <th>StreamShare</th>
+                        <th>Individual Subscriptions</th>
+                        <th>Informal Sharing</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cost Savings</td>
+                        <td><span class="check-icon">✓</span> Up to 75% savings</td>
+                        <td><span class="x-icon">✗</span> Full price</td>
+                        <td><span class="check-icon">✓</span> Variable savings</td>
+                    </tr>
+                    <tr>
+                        <td>Payment Security</td>
+                        <td><span class="check-icon">✓</span> Secure platform handling</td>
+                        <td><span class="check-icon">✓</span> Direct to service</td>
+                        <td><span class="x-icon">✗</span> Risky money transfers</td>
+                    </tr>
+                    <tr>
+                        <td>Account Security</td>
+                        <td><span class="check-icon">✓</span> Secure access management</td>
+                        <td><span class="check-icon">✓</span> Full control</td>
+                        <td><span class="x-icon">✗</span> Password sharing risks</td>
+                    </tr>
+                    <tr>
+                        <td>Profile Management</td>
+                        <td><span class="check-icon">✓</span> Dedicated profiles</td>
+                        <td><span class="check-icon">✓</span> Full access</td>
+                        <td><span class="x-icon">✗</span> Profile conflicts</td>
+                    </tr>
+                    <tr>
+                        <td>Reliability</td>
+                        <td><span class="check-icon">✓</span> Vetted members</td>
+                        <td><span class="check-icon">✓</span> Service dependent</td>
+                        <td><span class="x-icon">✗</span> Depends on others</td>
+                    </tr>
+                    <tr>
+                        <td>Legal Compliance</td>
+                        <td><span class="check-icon">✓</span> Terms of service compliant</td>
+                        <td><span class="check-icon">✓</span> Fully compliant</td>
+                        <td><span class="x-icon">✗</span> Often violates terms</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Users Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>I was paying for 5 different streaming services before finding StreamShare. Now I have access to even more content while saving over $50 every month!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h4>Michael Jordan</h4>
+                            <p>Netflix & Disney+ Sharer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>As a college student on a tight budget, StreamShare has been a game-changer. I can now afford premium streaming without breaking the bank.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <h4>Alex Kim</h4>
+                            <p>Spotify Family Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        <p>I was skeptical at first, but the platform's security features put my mind at ease. The payment system is seamless and I've had zero issues in 6 months.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SR</div>
+                        <div class="author-info">
+                            <h4>Sarah Rodriguez</h4>
+                            <p>HBO Max Group Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Available Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📺</div>
+                    <h3>TV & Movie Streaming</h3>
+                    <p>Share subscriptions for Netflix, Disney+, HBO Max, Amazon Prime, Hulu, and more.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎵</div>
+                    <h3>Music Streaming</h3>
+                    <p>Split the cost of Spotify, Apple Music, Tidal, YouTube Music family plans.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🎮</div>
+                    <h3>Gaming Services</h3>
+                    <p>Share Xbox Game Pass, PlayStation Plus, Nintendo Online, and other gaming subscriptions.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>Reading & Learning</h3>
+                    <p>Split subscriptions for Audible, Kindle Unlimited, educational platforms, and more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">Is it legal to share streaming subscriptions?</div>
+                <div class="faq-answer">
+                    <p>Most streaming services allow account sharing within a household or family. Our platform helps you connect with others in a way that respects each service's terms of use. We provide clear guidelines for each service to ensure compliance.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do payments work?</div>
+                <div class="faq-answer">
+                    <p>Our secure payment system handles all transactions between members. The subscription owner receives their share automatically each month, and members pay only for their portion of the subscription.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What if someone stops paying?</div>
+                <div class="faq-answer">
+                    <p>We have protection systems in place for subscription owners. If a member stops paying, they'll lose access, and we'll help find a replacement if needed. Your subscription remains secure.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How do you ensure privacy and security?</div>
+                <div class="faq-answer">
+                    <p>We never share your personal login credentials with other users. Our platform uses secure access methods that protect your account information while still allowing shared access to the content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Start Saving?</h2>
+            <p>Join thousands of users who are already saving up to 75% on their streaming costs.</p>
+            <form id="cta-form" class="email-form">
+                <input type="email" class="email-input" placeholder="Enter your email" required>
+                <button type="submit" class="submit-button">Sign Up Now</button>
+            </form>
+            
+            <!-- Security Badges -->
+            <div class="security-badges">
+                <div class="security-badge">
+                    <span>🔒</span> 256-bit SSL Encryption
+                </div>
+                <div class="security-badge">
+                    <span>✓</span> Verified Payments
+                </div>
+                <div class="security-badge">
+                    <span>🛡️</span> Data Protection
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating CTA Button -->
+    <a href="#signup" id="floating-cta" class="floating-cta cta-button">Sign Up</a>
+
+    <!-- Thank You Modal -->
+    <div id="thank-you-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Thank You for Signing Up!</h2>
+            <p>We've received your email and will keep you updated on our launch and early access opportunities.</p>
+            <button class="cta-button" id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About StreamShare</h3>
+                    <p>StreamShare is a platform that connects people looking to share streaming service subscriptions safely and securely.</p>
+                    <div class="social-links">
+                        <a href="#"><span>f</span></a>
+                        <a href="#"><span>t</span></a>
+                        <a href="#"><span>in</span></a>
+                        <a href="#"><span>ig</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@streamshare.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Streaming St, Digital City</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 StreamShare. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

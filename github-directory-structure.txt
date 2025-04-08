@@ -1,0 +1,72 @@
+# StreamShare Project Directory Structure
+
+```
+streamshare/
+├── index.html                  # Main HTML file
+├── css/
+│   ├── style.css               # Main styles
+│   └── responsive.css          # Responsive design styles
+├── js/
+│   ├── main.js                 # Main JavaScript functionality
+│   └── admin.js                # Admin panel functionality
+├── img/
+│   ├── mockup.png              # Platform mockup image (you'll need to add this)
+│   └── security-badges/        # Folder for security badge icons (optional)
+├── screenshots/
+│   └── streamshare-screenshot.png  # Screenshot for README (you'll need to add this)
+├── .gitignore                  # Git ignore file
+├── LICENSE                     # MIT License
+└── README.md                   # Project documentation
+```
+
+## Setup Instructions
+
+1. Create the directory structure shown above
+2. Place each file in its corresponding location:
+   - `index.html` in the root directory
+   - `style.css` and `responsive.css` in the `css` folder
+   - `main.js` and `admin.js` in the `js` folder
+   - `.gitignore`, `LICENSE`, and `README.md` in the root directory
+
+3. Create the missing folders:
+   ```bash
+   mkdir -p css js img/security-badges screenshots
+   ```
+
+4. Add a placeholder mockup image:
+   - You'll need to add your own mockup image to `img/mockup.png`
+   - For now, you can use any placeholder image and rename it to `mockup.png`
+
+5. Take a screenshot of your site once it's running and save it to `screenshots/streamshare-screenshot.png` for the README
+
+## GitHub Setup
+
+After organizing your files according to the structure above, follow these steps to push to GitHub:
+
+```bash
+# Navigate to your project folder
+cd path/to/streamshare
+
+# Initialize a new Git repository
+git init
+
+# Add all your files to staging
+git add .
+
+# Commit your files
+git commit -m "Initial commit for StreamShare landing page"
+
+# Add your GitHub repository as remote (replace USERNAME with your GitHub username)
+git remote add origin https://github.com/USERNAME/streamshare.git
+
+# Push your code to GitHub
+git push -u origin main
+```
+
+## Local Development
+
+To test your site locally, simply open the `index.html` file in your web browser:
+- Double-click on the `index.html` file in your file explorer, or
+- Drag and drop the `index.html` file into your browser window
+
+For a more professional development environment, you can use a local server like Live Server in VS Code.

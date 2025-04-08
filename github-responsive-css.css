@@ -1,0 +1,110 @@
+/* Responsive Design */
+@media (max-width: 991px) {
+    .pricing-card, .testimonial-card {
+        flex-basis: 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .step, .service-card, .pricing-card, .testimonial-card {
+        flex-basis: 100%;
+    }
+
+    .footer-section {
+        flex-basis: 100%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .email-form {
+        flex-direction: column;
+    }
+
+    .email-input {
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .submit-button {
+        border-radius: 5px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .admin-controls {
+        flex-direction: column;
+    }
+
+    .admin-controls button {
+        margin-bottom: 10px;
+    }
+
+    .mockup-text, .mockup-image {
+        flex-basis: 100%;
+    }
+
+    .mockup-image {
+        margin-top: 30px;
+    }
+    
+    .comparison-table {
+        font-size: 14px;
+    }
+    
+    .comparison-table th, .comparison-table td {
+        padding: 10px;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .cta-section h2 {
+        font-size: 28px;
+    }
+    
+    .pricing-card .price {
+        font-size: 36px;
+    }
+    
+    .comparison-table {
+        font-size: 12px;
+    }
+}
